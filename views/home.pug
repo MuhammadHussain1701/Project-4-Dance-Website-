@@ -1,0 +1,49 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js") 
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    
+    section#introSection 
+        div Welcome To Hussain's Dance Academy
+        div.small Eat  Dance  Sleep & Repeat
+
+    section#missionSection 
+        h1 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/card3.png", alt="")
+
+                div.card-content
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime consectetur.
+        div.card
+            h3 Personal Training
+            div.card-box
+                div.card-img
+                    img(src="/static/img/card1.png", alt="")
+
+                div.card-content
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime consectetur.
+        div.card
+            h3 Free Consultation
+            div.card-box
+                div.card-img
+                    img(src="/static/img/card2.png", alt="")
+
+                div.card-content
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime consectetur.
+    
+    section#sponsorsSection 
+        h1 Sponsers
+        div#sponsers
+            img(src="/static/img/SponserTiktok.png", alt="", class="spImage")
+            img(src="/static/img/SponsersDeezer.png", alt="", class="spImage")
+            img(src="/static/img/SponsersDisney.png", alt="", class="spImage")
+            img(src="/static/img/SponserUnilever.png", alt="", class="spImage")
